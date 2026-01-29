@@ -1,0 +1,112 @@
+Build a responsive web-based billing and GST automation application called “AutoGST Billing”.
+
+TARGET USERS:
+Small-scale businesses in India and accountants who file GST using Tally.
+
+CORE OBJECTIVE:
+Eliminate manual invoice data entry using OCR and automatically generate GST-ready Excel reports based on a user-uploaded Excel template.
+
+FEATURE REQUIREMENTS:
+
+1. AUTHENTICATION & SECURITY MODULE
+
+A. REGISTER PAGE
+- Fields:
+  - Business Name
+  - Email ID
+  - Username
+  - Password
+  - Confirm Password
+- On clicking “Register”:
+  - Send a One-Time Password (OTP) to the entered Email ID
+  - Show an OTP verification screen
+- Only after correct OTP verification:
+  - Account is successfully created
+- Display message:
+  “Email verified successfully. Account created.”
+
+B. LOGIN PAGE
+- Login using:
+  - Username or Email ID
+  - Password
+
+C. FORGOT PASSWORD
+- User enters registered Email ID
+- System sends OTP to email
+- OTP verification screen
+- Allow user to reset password after OTP validation
+
+(Note: OTP flow is UI/UX simulation only, backend not required.)
+
+2. MAIN DASHBOARD (After Login)
+- Summary cards:
+  - Total Invoices (current month)
+  - GST Payable (auto-calculated)
+  - Paid Invoices
+  - Pending Invoices
+- Clean accounting-style dashboard UI
+
+3. SMART DUMP (CORE INNOVATION)
+- Drag-and-drop upload area
+- Upload up to 50 invoice files at once
+- Accept PDF, JPG, PNG
+- Label: “Smart Dump – Bulk Invoice Upload”
+
+4. OCR EXTRACTION (CONCEPTUAL)
+- Simulate OCR extraction of:
+  - Invoice Number
+  - Invoice Date
+  - Party Name
+  - GSTIN
+  - HSN Code
+  - Taxable Value
+  - CGST / SGST / IGST
+- No manual typing, only verification
+
+5. EXCEL TEMPLATE–BASED MAPPING (CRITICAL FEATURE)
+- System first reads column headings from user-uploaded Excel file
+- Example headings:
+  - GST No
+  - HSN
+  - Invoice No
+  - Date
+  - Taxable Value
+  - CGST
+  - SGST
+  - IGST
+- OCR data must be mapped dynamically to these headings
+- Missing or unclear fields must be marked as “Needs Review”
+
+6. EXTRACTED INVOICE PREVIEW
+- Table showing OCR-extracted data mapped to Excel columns
+- Status column:
+  - Verified
+  - Pending Review
+
+7. GST REPORTS & EXPORT
+- Monthly GST reports:
+  - GSTR-1 (Sales)
+  - GSTR-3B Summary
+  - Purchase & ITC
+- “Download Excel” buttons
+- Excel structure must be compatible with Tally (conceptual)
+
+8. SAMPLE WORKFLOW SECTION
+- Step 1: Register with Email + OTP verification
+- Step 2: Login to dashboard
+- Step 3: Upload invoices in Smart Dump
+- Step 4: OCR extracts data
+- Step 5: Verify extracted data
+- Step 6: Download GST-ready Excel
+
+DESIGN REQUIREMENTS:
+- Modern, professional UI
+- Blue and white color theme
+- Dashboard-style layout
+- Mobile & desktop responsive
+
+IMPORTANT NOTES:
+- UI/UX prototype only (ideathon/demo)
+- No backend, OCR engine, or email service required
+- OTP and email verification are simulated visually
+- Focus on real-world workflow and feasibility

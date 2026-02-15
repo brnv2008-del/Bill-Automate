@@ -12,6 +12,7 @@ import SmartDumpPage from "@/pages/app/smart-dump.tsx";
 import ExtractionPage from "@/pages/app/extraction.tsx";
 import ReportsPage from "@/pages/app/reports.tsx";
 import WorkflowPage from "@/pages/app/workflow.tsx";
+import ManualEntryPage from "@/pages/app/manual-entry.tsx";
 
 function isAuthed(): boolean {
   try {
@@ -125,6 +126,14 @@ function Router() {
         component={() => (
           <AppShell>
             <WorkflowPage />
+          </AppShell>
+        )}
+      />
+      <ProtectedRoute
+        path="/app/manual-entry"
+        component={() => (
+          <AppShell>
+            <ManualEntryPage />
           </AppShell>
         )}
       />

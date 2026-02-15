@@ -5,6 +5,7 @@ import { LogOut, Sparkles } from "lucide-react";
 
 const nav = [
   { href: "/app", label: "Dashboard", testId: "link-nav-dashboard" },
+  { href: "/app/manual-entry", label: "Manual Entry", testId: "link-nav-manual-entry" },
   { href: "/app/smart-dump", label: "Smart Dump", testId: "link-nav-smart-dump" },
   { href: "/app/extraction", label: "Extraction", testId: "link-nav-extraction" },
   { href: "/app/reports", label: "Reports", testId: "link-nav-reports" },

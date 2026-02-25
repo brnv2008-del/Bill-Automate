@@ -1,0 +1,17 @@
+
+{
+  "hosting": {
+    "source": "dist/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "appHosting": {
+    "backend": {
+      "entryPoint": "node dist/index.cjs",
+      "platform": "nodejs18"
+    }
+  }
+}
